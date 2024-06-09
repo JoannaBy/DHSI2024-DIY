@@ -8,13 +8,13 @@ Before the course, please take a look at the reading list and install necessary 
   
 ### Reading  
 All the suggested readings are available in the coursepack provided to you via DHSI channels.  
-We also created a [syllabus of references used in the coursepack and suggested further reading]() (note that the latter list might grow to reflect our discussions during the course).
+We also created a [syllabus of references used in the coursepack and suggested further reading](https://github.com/JoannaBy/DHSI2024-DIY/blob/main/before_the_course/reading.md) (note that the latter list might grow to reflect our discussions during the course).
   
 ### Installations
-You will find detailed installation tips [here]()
+You will find detailed installation tips [here](https://github.com/JoannaBy/DHSI2024-DIY/blob/main/before_the_course/installations.md)
 
 ### Useful links and homework
-While you are not obliged to do this before the course, you might find it useful to take a look [here]() and think about your text editor and other tools you use. Finally, take a look at [the homeworks]() we will be dealing with - perhaps you'd like to get a head start and have more time to relax in the evenings during the course?
+While you are not obliged to do this before the course, you might find it useful to take a look [here](https://github.com/JoannaBy/DHSI2024-DIY/blob/main/before_the_course/useful_tools.md) and think about your text editor and other tools you use. Finally, take a look at [the homeworks](https://github.com/JoannaBy/DHSI2024-DIY/blob/main/before_the_course/homeworks.md) we will be dealing with - perhaps you'd like to get a head start and have more time to relax in the evenings during the course?
 
 ## During the course
 The proposed schedule is a rough version based on our past experiences teaching similar courses and might be adapted to your needs and interests.
@@ -47,4 +47,4 @@ Documentation of the package ‘stylo’:
 * for advanced users: [a paper in R Journal](https://journal.r-project.org/archive/2016/RJ-2016-007/RJ-2016-007.pdf)
 * full documentation at [CRAN](https://cran.r-project.org/web/packages/stylo/stylo.pdf)  
   
-More on useful tools [here]().
+More on useful tools [here](https://github.com/JoannaBy/DHSI2024-DIY/blob/main/before_the_course/useful_tools.md).
