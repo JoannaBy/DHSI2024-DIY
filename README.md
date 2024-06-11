@@ -21,7 +21,7 @@ The proposed schedule is a rough version based on our past experiences teaching 
 ### Schedule
 * Monday, 10th June 2024
 	* 10:15-12:00	Introduction to stylometry and textual analysis
-	* 1:30-4:00 	Introduction to supervised and unsupervised machine learning, designing a study and first experiments
+	* 1:00-2:15 	Introduction to supervised and unsupervised machine learning, designing a study and first experiments
 
 * Tuesday, 11th June 2024
 	* 9:00-12:00	Exploratory analysis  –  methods of dimension reduction and feature explainability
@@ -36,7 +36,7 @@ The proposed schedule is a rough version based on our past experiences teaching 
 	* 1:30-4:00	Designing serial experiments and adding more R
 
 * Friday, 14th June 2024
-	* 9:00-12:00	What Have We Learned?
+	* 9:00-10:15	What Have We Learned?
 
 
 ### Useful links
