@@ -62,3 +62,5 @@ Texts from our blog: [https://computationalstylistics.github.io/blog/](https://c
 * Kulesa, A., Krzywinski, M., Blainey, P., Altman, N., 2015. Sampling distributions and the bootstrap. Nature Methods 12, 477–478. https://doi.org/10/gcpfsz
 * Altman, N., Krzywinski, M., 2018. The curse(s) of dimensionality. Nature Methods 15, 399–400. https://doi.org/10/ghrqhp
 
+## Additional readings mentioned in the class
+* Research on deceptive language in interview mentioned by Marion [https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French](https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French) 
