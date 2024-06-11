@@ -63,4 +63,7 @@ Texts from our blog: [https://computationalstylistics.github.io/blog/](https://c
 * Altman, N., Krzywinski, M., 2018. The curse(s) of dimensionality. Nature Methods 15, 399–400. https://doi.org/10/ghrqhp
 
 ## Additional readings mentioned in the class
-* Research on deceptive language in interview mentioned by Marion [https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French](https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French) 
+* Research on deceptive language in interview mentioned by Marion [https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French](https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French)
+* CLS Infra report on basic user needs and gaps in education [https://clsinfra.io/resources/outputs/#D3-1](https://clsinfra.io/resources/outputs/#D3-1)
+* CLS Infra survey of computational text analysis methods for particular tasks [https://clsinfra.io/resources/outputs/#D3-2](https://clsinfra.io/resources/outputs/#D3-2)
+* PAN competition and events on forensic stylometry [https://pan.webis.de/](https://pan.webis.de/) 
