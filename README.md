@@ -25,15 +25,15 @@ The proposed schedule is a rough version based on our past experiences teaching 
 
 * Tuesday, 11th June 2024
 	* 9:00-12:00	Exploratory analysis  –  methods of dimension reduction and feature explainability
-	* 1:30-4:00	Cluster analysis, consensus trees and feature engineering
+	* 1:00-3:45	Cluster analysis, consensus trees and feature engineering, culling [slides](https://joannaby.github.io/Culling/Culling.html)
 
 * Wednesday, 12th June 2024
 	* 9:00-12:00	Classification methods and validation of the results
-	* 1:30-4:00	Sequential analysis of singular works
+	* 1:00-3:45	Sequential analysis of singular works
 
 * Thursday, 13th June 2024
 	* 9:00-12:00	Network analysis 
-	* 1:30-4:00	Designing serial experiments and adding more R
+	* 1:00-3:45	Designing serial experiments and adding more R
 
 * Friday, 14th June 2024
 	* 9:00-10:15	What Have We Learned?
