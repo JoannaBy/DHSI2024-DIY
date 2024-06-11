@@ -2,7 +2,7 @@
 # How well MDS reconstructs the original data distances
 
 # remember to set your working directory first
-setwd("C:/OneDrive - Uniwersytet Jagielloński/Naukowe/DigitalHum/ESU/ESU2021/small2022")
+setwd("put the path to your directory here")
 library(stylo)
 
 
