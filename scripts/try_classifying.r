@@ -20,9 +20,14 @@ results = classify(cv.folds = 10)
 results$cross.validation.summary
 
 ###################################################################################################################################################################################################################
-# And let's try to make the cross-validation step by step and see how well classify() can manage in telling the author of every text in our corpus
+# And let's try to make the cross-validation step by step 
+# and see how well classify() can manage in telling the author
+# of every text in our corpus
 
 library(stylo)
+
+#######
+# Option 1: leave-one-out cross validation
 
 # loading the corpus
 texts = load.corpus.and.parse(files = "all", corpus.dir = "corpus")
@@ -33,7 +38,8 @@ freq.list = make.frequency.list(texts, head = 1000)
 word.frequencies = make.table.of.frequencies(corpus = texts, features = freq.list)
 
 # now the main procedure takes place:
-results  = crossv(training.set = word.frequencies, cv.mode = "leaveoneout", classification.method = "svm")
+results  = crossv(training.set = word.frequencies, cv.mode = "leaveoneout",
+                  classification.method = "svm")
 
 # see what's inside:
 summary(results)
@@ -42,10 +48,14 @@ summary(results)
 results$misclassified
 
 # or get the number of correct classifications:
+results$y
 sum(results$y, na.rm = TRUE)
 
 # or see how Emily Bronte's books were classified:
 results$predicted[results$expected == 'EBronte']
+
+#######
+# Option 2: leave-one-out cross validation
 
 
 ##################################################################################################################################################
