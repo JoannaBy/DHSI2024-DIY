@@ -1,6 +1,9 @@
 # load the library
 library(stylo)
 
+# To proceed in this part you need your texts arranged in two folders named:
+# 'primary_set' (= training set) and 'secondary_set' (= test set)
+
 # start classification
 classify()
 
@@ -33,6 +36,10 @@ crossv(training.set = word.frequencies, cv.mode = "leaveoneout", classification.
 # Now with rolling classification - you need two folders - 'reference_set', which holds the training data, and 'test_set', where you put the text you want to examine
 
 library(stylo)
+
+# To proceed in this part you need your texts arranged in two folders named:
+# 'reference_set' (= training set) and 'test_set' (= test set)
+
 # just run the fist experiment
 rolling.classify(classification.method = "svm")
 # let's also try to save the graph
