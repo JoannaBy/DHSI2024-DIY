@@ -3,11 +3,14 @@ library(stylo)
 
 # To proceed in this part you need your texts arranged in two folders named:
 # 'primary_set' (= training set) and 'secondary_set' (= test set)
+# Go to the folder that contains them:
+setwd(".........")
 
 # start classification
 classify()
 
-# open 'final_results' and see how good was the accuracy of the classification and what, if anything, got misclassfied
+# open 'final_results.txt' and see how good was the accuracy of the classification
+# and what, if anything, got misclassfied
 
 # now let's try running a serial experiment with a very simple type of cross-validation
 # perform the classification:
@@ -30,15 +33,26 @@ freq.list = make.frequency.list(texts, head = 1000)
 word.frequencies = make.table.of.frequencies(corpus = texts, features = freq.list)
 
 # now the main procedure takes place:
-crossv(training.set = word.frequencies, cv.mode = "leaveoneout", classification.method = "svm")
+results  = crossv(training.set = word.frequencies, cv.mode = "leaveoneout", classification.method = "svm")
+
+# see what's inside:
+summary(results)
+
+# e.g., check which texts were misattributed to which authors
+results$misclassified
+
+# or get the number of correct classifications:
+sum(results$y, na.rm = TRUE)
+
+# or see how Emily Bronte's books were classified:
+results$predicted[results$expected == 'EBronte']
+
 
 ##################################################################################################################################################
-# Now with rolling classification - you need two folders - 'reference_set', which holds the training data, and 'test_set', where you put the text you want to examine
+# Now with rolling classification - you need two folders - 'reference_set' (= training set), 
+# which holds the training data, and 'test_set' (= test set), where you put the text you want to examine
 
 library(stylo)
-
-# To proceed in this part you need your texts arranged in two folders named:
-# 'reference_set' (= training set) and 'test_set' (= test set)
 
 # just run the fist experiment
 rolling.classify(classification.method = "svm")
