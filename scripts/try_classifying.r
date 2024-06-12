@@ -39,7 +39,7 @@ word.frequencies = make.table.of.frequencies(corpus = texts, features = freq.lis
 
 # now the main procedure takes place:
 results  = crossv(training.set = word.frequencies, cv.mode = "leaveoneout",
-                  classification.method = "svm")
+                  classification.method = "delta")
 
 # see what's inside:
 summary(results)
@@ -52,6 +52,8 @@ results$y
 sum(results$y, na.rm = TRUE)
 
 # or see how Emily Bronte's books were classified:
+results$expected
+results$expected == 'EBronte'
 results$predicted[results$expected == 'EBronte']
 
 #######
