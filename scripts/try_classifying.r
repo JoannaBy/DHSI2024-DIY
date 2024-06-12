@@ -74,3 +74,18 @@ help(rolling.classify)
 rolling.classify(write.png.file = TRUE, classification.method = "nsc", mfw=50, training.set.sampling = "normal.sampling", slice.size = 5000, slice.overlap = 4500) 
 
 # If you want to mark specific parts in the text, just put the word “xmilestone” (without "") in the place of interest.
+
+
+########################################################################################
+# prepare the text tokenization
+tokenized.texts = load.corpus.and.parse(files = "all", corpus.dir = "corpus", markup.type = "plain", language = "Other", encoding = "UTF-8")
+# make features
+features = make.frequency.list(tokenized.texts, head = 2000)
+# make table of frequencies
+data = make.table.of.frequencies(tokenized.texts, features, relative = TRUE)
+
+# do the imposters
+imposters(reference.set = data[-c(1),], test = data[1,], distance="wurzburg") 
+
+# you can also compare it with cross-validation results
+crossv(training.set = data, cv.mode = "leaveoneout", classification.method = "svm") 
