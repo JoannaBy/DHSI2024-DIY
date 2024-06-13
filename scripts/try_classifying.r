@@ -39,7 +39,7 @@ word.frequencies = make.table.of.frequencies(corpus = texts, features = freq.lis
 
 # now the main procedure takes place:
 results  = crossv(training.set = word.frequencies, cv.mode = "leaveoneout",
-                  classification.method = "svm")
+                  classification.method = "delta")
 
 # see what's inside:
 summary(results)
@@ -52,6 +52,8 @@ results$y
 sum(results$y, na.rm = TRUE)
 
 # or see how Emily Bronte's books were classified:
+results$expected
+results$expected == 'EBronte'
 results$predicted[results$expected == 'EBronte']
 
 #######
@@ -71,9 +73,24 @@ rolling.classify(classification.method = "svm", write.png.file = TRUE)
 # In fact there is a number of parameters you can control, go ahead and try changing some of them, you can find all options in CRAN documentation: https://cran.r-project.org/web/packages/stylo/stylo.pdf or by checking
 help(rolling.classify) 
 
-rolling.classify(write.png.file = TRUE, classification.method = "nsc", mfw=50, training.set.sampling = "normal.sampling", slice.size = 5000, slice.overlap = 4500) 
+results = rolling.classify(write.png.file = TRUE, classification.method = "nsc", 
+                 mfw=50, training.set.sampling = "normal.sampling", 
+                 slice.size = 5000, slice.overlap = 4500) 
 
-# If you want to mark specific parts in the text, just put the word “xmilestone” (without "") in the place of interest.
+
+
+# If you want to mark specific parts in the text, 
+# just put the word "xmilestone" (without "") in the place of interest.
+# These locations are later stored in:
+results$milestone.points
+
+###
+# How to find point at which the classification changes
+results$classification.results
+classes = unique(results$classification.results)
+changes = diff(results$classification.results==classes[1])
+# This gives you placement of the last slice before a change
+results$classification.results[abs(changes)==1]
 
 
 ########################################################################################
