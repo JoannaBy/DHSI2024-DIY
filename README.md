@@ -32,7 +32,7 @@ The proposed schedule is a rough version based on our past experiences teaching 
 	* 1:00-3:45	Sequential analysis of singular works
 
 * Thursday, 13th June 2024
-	* 9:00-12:00	Network analysis 
+	* 9:00-12:00	Network analysis (please download [this](https://github.com/COST-ELTeC/ELTeC-eng))
 	* 1:00-3:45	Designing serial experiments and adding more R
 
 * Friday, 14th June 2024
