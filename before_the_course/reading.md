@@ -74,3 +74,4 @@ Texts from our blog: [https://computationalstylistics.github.io/blog/](https://c
 * Kestemont, M., Stover, J., Koppel, M., Karsdorp, F. and Daelemans, W. (2016b). Authorship verification with the Ruzicka metric. In, Digital Humanities 2016: Conference Abstracts. Kraków: Jagiellonian University & Pedagogical University, pp. 246–49 http://dh2016.adho.org/abstracts/402.
 * Koppel, M. and Winter, Y. (2014). Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology, 65(1): 178–87 doi:10.1002/asi.22954. http://dx.doi.org/10.1002/asi.22954.
 * ELTeC corpora [https://github.com/COST-ELTeC](https://github.com/COST-ELTeC)
+* Dracor - dramatic corpora analysis [https://www.dracor.org/](https://www.dracor.org/)
