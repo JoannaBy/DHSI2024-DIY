@@ -66,4 +66,10 @@ Texts from our blog: [https://computationalstylistics.github.io/blog/](https://c
 * Research on deceptive language in interview mentioned by Marion [https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French](https://www.researchgate.net/publication/303959692_A_stylometric_approach_to_deception_during_police_interviews_in_French)
 * CLS Infra report on basic user needs and gaps in education [https://clsinfra.io/resources/outputs/#D3-1](https://clsinfra.io/resources/outputs/#D3-1)
 * CLS Infra survey of computational text analysis methods for particular tasks [https://clsinfra.io/resources/outputs/#D3-2](https://clsinfra.io/resources/outputs/#D3-2)
-* PAN competition and events on forensic stylometry [https://pan.webis.de/](https://pan.webis.de/) 
+* PAN competition and events on forensic stylometry [https://pan.webis.de/](https://pan.webis.de/)
+* Cross-validation in Stylo [https://computationalstylistics.github.io/blog/cross-validation/](https://computationalstylistics.github.io/blog/cross-validation/)
+* Rolling stylometry [https://computationalstylistics.github.io/blog/rolling_stylometry/](https://computationalstylistics.github.io/blog/rolling_stylometry/)
+* Imposters in Stylo [https://computationalstylistics.github.io/blog/imposters/](https://computationalstylistics.github.io/blog/imposters/)
+* Kestemont, M., Stover, J., Koppel, M., Karsdorp, F. and Daelemans, W. (2016a). Authenticating the writings of Julius Caesar. Expert Systems with Applications, 63: 86–96.
+* Kestemont, M., Stover, J., Koppel, M., Karsdorp, F. and Daelemans, W. (2016b). Authorship verification with the Ruzicka metric. In, Digital Humanities 2016: Conference Abstracts. Kraków: Jagiellonian University & Pedagogical University, pp. 246–49 http://dh2016.adho.org/abstracts/402.
+* Koppel, M. and Winter, Y. (2014). Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology, 65(1): 178–87 doi:10.1002/asi.22954. http://dx.doi.org/10.1002/asi.22954.
