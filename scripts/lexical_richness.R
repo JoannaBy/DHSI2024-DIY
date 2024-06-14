@@ -9,6 +9,8 @@ corp=load.corpus.and.parse(files = "Dickens_Bleak.txt",
                            ngram.size = 1, preserve.case = FALSE,
                            encoding = "UTF-8")
 
+booklen <- length(corp$Dickens_Bleak)
+
 freqs <- make.frequency.list(corp$Dickens_Bleak ,value = TRUE)
 
 # How to compute...
@@ -24,7 +26,7 @@ sum(p^2, na.rm = TRUE)
 
 incr = 2000
 results <- c()
-for(i in seq(1,round(length(corp$Dickens_Bleak)/incr))){
+for(i in seq(1,round(booklen/incr))){
   # Make a frequency list of word unigrams
   freqs <- make.frequency.list(corp$Dickens_Bleak[(1+(i-1)*incr):(i*incr)]
                                ,value = TRUE)
@@ -34,7 +36,9 @@ for(i in seq(1,round(length(corp$Dickens_Bleak)/incr))){
   results <- c(results, entropy)
 }
 
-plot(results, type = 'l')
+plot(seq(1,round(booklen/incr))*incr,results, type = 'l',
+     xlab = 'words',ylab='entropy')
+
 
 ################
 # Look at how entropy of word frequency distribution increases along the novel
@@ -42,7 +46,7 @@ plot(results, type = 'l')
 
 incr = 2000
 results <- c()
-for(i in seq(1,round(length(corp$Dickens_Bleak)/incr))){
+for(i in seq(1,round(booklen)/incr))){
   # Make a frequency list of word unigrams
   freqs <- make.frequency.list(corp$Dickens_Bleak[1:(i*incr)]
                                ,value = TRUE)
@@ -52,4 +56,7 @@ for(i in seq(1,round(length(corp$Dickens_Bleak)/incr))){
   results <- c(results, entropy)
 }
 
-plot(results, type = 'l')
+
+plot(seq(1,round(booklen/incr))*incr,results, type = 'l',
+     xlab = 'words',ylab='entropy')
+
