@@ -46,10 +46,9 @@ plot(seq(1,round(booklen/incr))*incr,results, type = 'l',
 
 incr = 2000
 results <- c()
-for(i in seq(1,round(booklen)/incr))){
+for(i in seq(1,round(booklen)/incr)){
   # Make a frequency list of word unigrams
-  freqs <- make.frequency.list(corp$Dickens_Bleak[1:(i*incr)]
-                               ,value = TRUE)
+  freqs <- make.frequency.list(corp$Dickens_Bleak[1:(i*incr)], value = TRUE)
   # Compute entropy
   entropy <- sum(-freqs*log(freqs), na.rm = TRUE)
   # Append it to the vector of results
