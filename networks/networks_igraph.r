@@ -2,7 +2,7 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 ### Packages
-#install.packages("igraph")
+# install.packages("igraph")
 # library(help="igraph")
 library(igraph)
 #sessionInfo
@@ -94,7 +94,8 @@ E(g2, path=c(1,4,5))
 E(g2)[ adj(3) ]
 ### Or multiple vertices
 E(g2)[ adj(c(3,1)) ]
-g3 <- subgraph.edges(g2, E(g2)[ adj(match("Cecil",V(g2)$name)) ], delete.vertices = TRUE)
+g3 <- subgraph.edges(g2, E(g2)[
+  adj(match("Cecil",V(g2)$name)) ], delete.vertices = TRUE)
 plot(g3, layout=layout_with_kk,edge.arrow.size =0.1)
 plot(g2,edge.arrow.size =0.1)
 
